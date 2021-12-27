@@ -1,15 +1,13 @@
 <?php
 
 namespace App\Models;
-use Conner\Likeable\Likeable;
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasFactory, Likeable;
+    use HasFactory;
     protected $guarded = [];
 
     public function user(){
@@ -27,5 +25,7 @@ class Post extends Model
     public function comments(){
     return $this-> hasMany(comment::class);
     }
+
+
 
 }

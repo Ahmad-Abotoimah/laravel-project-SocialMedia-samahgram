@@ -58,6 +58,7 @@ class RegisterController extends Controller
             'user_dob' => ['required'],
         ]);
     }
+
     /**
      * Create a new user instance after a valid registration.
      *

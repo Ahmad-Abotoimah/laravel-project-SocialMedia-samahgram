@@ -33,17 +33,12 @@
         <article class="_4_yKc">
             <div class="yOZjD _80tAB">
                 <div class="V64Sp"><img alt="" class="RP4i1 JtrJi "
-                        src="assets/images/logo.png"></div>
+                        src="https://www.instagram.com/static/images/homepage/screenshot5.jpg/0a2d3016f375.jpg"></div>
             </div>
             <div class="rgFsT">
                 <div class="gr27e">
-                    <div class="Logo mt-8">
-                        <!-- Logo -->
-                        <a href="{{ route('home') }}">
-                            <img src="assets/images/logo.png"
-                                alt="">
-                        </a>
-                    </div>                    <div class="EPjEi">
+                    <h1 class="NXVPg Szr5J coreSpriteLoggedOutWordmark ">Instagram</h1>
+                    <div class="EPjEi">
 
                         <form class="HmktE" id="loginForm"  method="POST" action="{{ route('login') }}">
                             @csrf
@@ -93,7 +88,7 @@
                                         </div>
                                     </button>
                                 </div>
-                                {{-- <div class="K-1uj Z7p_S">
+                                <div class="K-1uj Z7p_S">
                                     <div class="s311c"></div>
                                     <div class="_0tv-g">or</div>
                                     <div class="s311c"></div>
@@ -101,7 +96,7 @@
                                 <div class=" qF0y9  Igw0E IwRSH eGOV_ _4EzTm bkEs3 CovQj  jKUp7  DhRcB ">
                                     <button class="sqdOP yWX7d  y3zKF " type="button"><span
                                             class=" coreSpriteFacebookIcon AeB99"></span><span class="KPnG0">Log in with
-                                            Facebook</span></button></div> --}}
+                                            Facebook</span></button></div>
                             </div>
 
 

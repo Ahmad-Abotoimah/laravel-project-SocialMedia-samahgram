@@ -38,6 +38,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+
     public function  getUserImgAttribute($value) {
         if (strpos($value, 'https://') !== FALSE || strpos($value, 'http://') !== FALSE) {
             return $value;
@@ -50,12 +51,15 @@ class User extends Authenticatable
 
         }
 
+
     public function posts(){
-     return $this->hasMany(Post::class)->orderBy('created_at','DESC');
+     return $this->hasMany(Post::class);
+
     }
     public function comments()
     {
     return $this-> hasMany(Comment::class);
     }
+
 
 }

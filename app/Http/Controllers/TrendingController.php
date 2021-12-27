@@ -25,7 +25,7 @@ class TrendingController extends Controller
         
         $id[] = $user->id;
     }
-    $posts = Post::whereIn('user_id', $id)->limit(20)->paginate(9);
+    $posts = Post::whereIn('user_id', $id)->get();
     // return $posts ;
     return view ('trending', compact('users','posts'));
     

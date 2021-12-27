@@ -8,10 +8,6 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-    public function formSubmit(Request $request)
-{
-  $request->all();
-}
     /**
      * Display a listing of the resource.
      *
@@ -42,7 +38,7 @@ class CommentController extends Controller
     {
        $data= request()->validate([
            'post_id' => ['required', 'integer'],
-           'comment_text' => ['required', 'string'],
+           'comment_text' => ['required', 'text'],
            ] );
            $post= Post::findOrFail($request->post_id);
            $user_id = auth()->user()->id ;
@@ -51,7 +47,7 @@ class CommentController extends Controller
              'user_id' => $user_id,
              'comment_text' => $data['comment_text'],
           ]);
-          return redirect('/posts/'. $post->user->id);
+          return back();
 
     }
 
@@ -97,7 +93,6 @@ class CommentController extends Controller
      */
     public function destroy(Comment $comment)
     {
-        $comment->delete();
-        return back() ;
+        //
     }
 }

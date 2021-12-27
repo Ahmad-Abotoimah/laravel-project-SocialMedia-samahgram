@@ -18,10 +18,6 @@ use Illuminate\Http\Response;
 
 class AdminController extends Controller
 {
-//    public function dashboard()
-//    {
-//        return view('admin.index');
-//    }
     /**
      * Display a listing of the resource.
      *
@@ -38,10 +34,10 @@ class AdminController extends Controller
 
         return view('admin/table-basic', [
             'admins'   => $admins,
-            'users'   => $users,
-            'posts'   => $posts,
-            'follows' => $follows,
-            'comments'=> $comments
+             'users'   => $users,
+             'posts'   => $posts,
+             'follows' => $follows,
+             'comments'=> $comments
         ]);
     }
     public function index2()
@@ -53,8 +49,8 @@ class AdminController extends Controller
         $comments = Comment::all();
         return view('admin/index', [
             'admins' => $admins,
-            'users' => $users,
-            'posts' => $posts,
+             'users' => $users,
+             'posts' => $posts,
             'follows' => $follows,
             'comments'=> $comments
         ]);
@@ -68,8 +64,8 @@ class AdminController extends Controller
         $comments = Comment::all();
         return view('admin/pages-profile', [
             'admins' => $admins,
-            'users' => $users,
-            'posts' => $posts,
+             'users' => $users,
+             'posts' => $posts,
             'follows' => $follows,
             'comments'=> $comments
         ]);
@@ -101,8 +97,8 @@ class AdminController extends Controller
         return redirect('admoon');
     }
     /**
-     *
-     * /**
+ *
+* /**
      * Display the specified resource.
      *
      * @param Admin $admin
